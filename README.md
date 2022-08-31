@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Önemli Notlar
+
+Proje içerisine kullanılmak üzere Redux ve Antd kütüphaneleri eklenmiştir.Kullanmak isteyen arkadaşlar import ederek kullanabilirler.
+server root url: "http://localhost:4848"
+örnek sorgu url: "/api/v1/vendor/:id" 
+root url package.json içerisine proxy olarak geçilmiştir. Herhangi bir değişiklik yapmanıza gerek yoktur.
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
