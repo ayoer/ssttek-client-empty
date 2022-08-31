@@ -2,12 +2,38 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Projeleri çalıştırma
+
+### Client (React)
+
+1- yarn \
+2- yarn start \
+
+### Server (Node js)
+
+1- npm i \
+2- npm run start \
+
 ## Önemli Notlar
 
 Proje içerisine kullanılmak üzere Redux ve Antd kütüphaneleri eklenmiştir.Kullanmak isteyen arkadaşlar import ederek kullanabilirler.\
 server root url: "http://localhost:4848" \
 örnek sorgu url: "/api/v1/vendor/:id" \
-root url package.json içerisine proxy olarak geçilmiştir. Herhangi bir değişiklik yapmanıza gerek yoktur. 
+root url package.json içerisine proxy olarak geçilmiştir. Herhangi bir değişiklik yapmanıza gerek yoktur.
+
+## Beklentiler
+
+Projede en az 2 sayfa tasarlanması gerekmektedir.\
+
+1- Listeleme sayfası \
+2- Add-Update Sayfası \
+
+İsterseniz app ve update sayfalarını ayrı ayrı yapabilirsiniz.\
+
+2- Add sayfası \
+3- Update sayfası \
+
+Antd design componentlerinden Table, Select, Input ve Button componentleri kullanılmak zorundadır.
 
 ## Available Scripts
 
