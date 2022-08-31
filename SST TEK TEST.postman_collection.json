@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "54734529-445c-4b16-8b7c-d797a2e466a2",
+		"name": "SST TEK TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14046887"
+	},
+	"item": [
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "Country Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"filter\": \n        {\n            \"fields\": [{\"condition\": \"equal\", \"value\": true, \"dataField\": \"euMember\"}], \n            \"page\": {\n                \"size\" : 500,\n                \"number\": 0\n            },\n            \"sort\" : \"name\"\n        }\n    \n}"
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/country/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"country",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{JWT_TOKEN}}",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vendor",
+			"item": [
+				{
+					"name": "Search Vendor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/vendor/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Vendor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"ayhan\",\n    \"displayName\":\"Ayhan LTD\",\n    \"countryId\":\"630f1791be7cd333caa8e1ae\",\n    \"address\":\"heryer\",\n    \"phone\":\"5336632104\"\n  \n}"
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/vendor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vendor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}"
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/vendor/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vendor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"630f19f68128c2946b675b21\",\n    \"name\":\"ayhan\",\n    \"displayName\":\"Ayhan LTD ŞTI\",\n    \"countryId\":\"630f1791be7cd333caa8e1ae\",\n    \"address\":\"artık sadece 1 yer\",\n    \"phone\":\"5336632104\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/vendor/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vendor",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4848/api/v1/vendor/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4848",
+							"path": [
+								"api",
+								"v1",
+								"vendor",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "630f19f68128c2946b675b21"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{JWT_TOKEN}}",
+						"type": "string"
+					}
+				]
+			}
+		}
+	]
+}

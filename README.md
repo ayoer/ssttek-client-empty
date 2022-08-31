@@ -7,12 +7,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Client (React)
 
 1- yarn \
-2- yarn start \
+2- yarn start
 
 ### Server (Node js)
 
 1- npm i \
-2- npm run start \
+2- npm run start
 
 ## Önemli Notlar
 
@@ -21,17 +21,21 @@ server root url: "http://localhost:4848" \
 örnek sorgu url: "/api/v1/vendor/:id" \
 root url package.json içerisine proxy olarak geçilmiştir. Herhangi bir değişiklik yapmanıza gerek yoktur.
 
+Sorguların dokümantasyonu proje içirisindeki SST TEK TEST.postman_collection.json dosyasında mevcuttur. Postman kullanarak bu dosyayı import edip test edebilirsiniz.
+
+Sorgularda id field ları (\_id) olarak gelebilir. Postman dokümantasyonu verileri nasıl yollamazı gösteriyorsa gerekli değişikleri yaparak gönderin.
+
 ## Beklentiler
 
-Projede en az 2 sayfa tasarlanması gerekmektedir.\
+Projede en az 2 sayfa tasarlanması gerekmektedir.
 
 1- Listeleme sayfası \
-2- Add-Update Sayfası \
+2- Add-Update Sayfası
 
-İsterseniz app ve update sayfalarını ayrı ayrı yapabilirsiniz.\
+İsterseniz app ve update sayfalarını ayrı ayrı yapabilirsiniz.
 
 2- Add sayfası \
-3- Update sayfası \
+3- Update sayfası
 
 Antd design componentlerinden Table, Select, Input ve Button componentleri kullanılmak zorundadır.
 
