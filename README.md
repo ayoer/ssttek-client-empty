@@ -11,6 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Server (Node js)
 
+Sınav Zamanı size gönderilecek bir .env dosyayrı olacaktır. Bu dosyayı server uygulamasında (src/config) klasörünün içine yapıştırınız.
+
 1- npm i \
 2- npm run start
 
