@@ -23,7 +23,7 @@ root url package.json içerisine proxy olarak geçilmiştir. Herhangi bir deği�
 
 Sorguların dokümantasyonu proje içirisindeki SST TEK TEST.postman_collection.json dosyasında mevcuttur. Postman kullanarak bu dosyayı import edip test edebilirsiniz.
 
-Sorgularda id field ları (\_id) olarak gelebilir. Postman dokümantasyonu verileri nasıl yollamazı gösteriyorsa gerekli değişikleri yaparak gönderin.
+Sorgularda id field ları (\_id) olarak gelebilir. Postman dokümantasyonu verileri nasıl yollamazı gösteriyorsa , gerekli değişikleri yaparak gönderin.
 
 ## Beklentiler
 
